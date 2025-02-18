@@ -10,12 +10,14 @@ function Player(){
     const parametros = useParams();
 
     useEffect(() => {
-        fetch(`https://my-json-server.typicode.com/barbaram02/cinetag-api/videos?id=${parametros.id}`)
-            .then(resposta => resposta.json())
-            .then(dados => {
-                setVideo(...dados)
-            })
-    }, [])
+        if (parametros.id) {
+            fetch(`https://my-json-server.typicode.com/barbaram02/cinetag-api/videos?id=${parametros.id}`)
+                .then(resposta => resposta.json())
+                .then(dados => {
+                    setVideo(...dados);
+                });
+        }
+    }, [parametros.id]);
 
     if (!video){
         return <NaoEncontrada/>; 

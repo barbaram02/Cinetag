@@ -8,13 +8,12 @@
 }
 
 body {
-  margin: 0;
   font-family: var(--fonte);
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--cinza);
-  overflow: auto;
-  min-height: 160vh;
+  min-height: 150vh;
   
 }
 
