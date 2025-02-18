@@ -1,0 +1,13 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2.5em;
+    background-color: var(--preto);
+    height: 140px;
+}
+
+.logo {
+    width: auto;  /* Defina o tamanho desejado */
+    height: 70px;   /* Mantém a proporção da imagem */
+}
