@@ -10,7 +10,7 @@ function Player(){
     const parametros = useParams();
 
     useEffect(() => {
-        if (parametros.id) {
+        if (parametros.id) { //Consumindo API com FETCH para rodar os videos
             fetch(`https://my-json-server.typicode.com/barbaram02/cinetag-api/videos?id=${parametros.id}`)
                 .then(resposta => resposta.json())
                 .then(dados => {
